@@ -3,13 +3,18 @@
             element.classList.add('slide-in');
         });
     });
-    const slides = document.querySelectorAll('.carousel-slide');
+    // script.js
+// script.js
+const slides = document.querySelectorAll('.carousel-slide');
 let currentSlide = 0;
 
 function showSlide(n) {
-    slides[currentSlide].style.display = 'none';
+    slides.forEach((slide) => {
+        slide.style.display = 'none';
+    });
+
     currentSlide = (n + slides.length) % slides.length;
-    slides[currentSlide].style.display = 'block';
+    slides[currentSlide].style.display = 'grid';
 }
 
 // Click event for each individual page
@@ -33,5 +38,8 @@ document.querySelector('.carousel-next').addEventListener('click', () => {
     showSlide(currentSlide + 2);
 });
 
-    
+// Initial display
+showSlide(currentSlide);
 
+
+                
