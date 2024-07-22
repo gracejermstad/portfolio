@@ -2,8 +2,8 @@
 
 
 footer {
-    background-color: black;
-    color: #fff;
+    background-color: #ff6633;
+    color: black;
     text-align: center;
     padding: 20px 0;
 }
@@ -13,7 +13,7 @@ footer {
 }
 
 .footer-content a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -34,12 +34,12 @@ header{
     display: inline-flex;
     padding-bottom: 30px;
     justify-content: space-between;
-    background-color: black;
+    background-color: white;
 }
 @media only screen and (min-width: 768px) {
 header .logo {
     margin-top: 30px;
-    color:white;
+    color:black;
     font-size: 30px;
     margin-left: 30px;
    
@@ -48,7 +48,7 @@ header .logo {
 @media only screen and (max-width: 767px){
 header .logo {
     margin-top: 10px;
-    color:white;
+    color:black;
     font-size: 20px;
     margin-left: 30px;
    
@@ -75,20 +75,14 @@ h1 {
     margin-left: 5%;
 }
   }
-  @media only screen and (min-width: 768px) {
   h2 {
     margin-left: 5%;
     font-weight: 100;
-    color: white;
+    color: black;
   }
-}
-@media only screen and (max-width: 767px){
-h2 {
-    margin-left: 5%;
-    font-weight: 100;
-    color: white;
-    font-size: 14px;
-  }
+
+.main-grid-home{
+    background-color: white;
 }
 
                                     /* BODY */
@@ -176,7 +170,7 @@ nav {
     justify-content: flex-end; /* Align to the right */
     align-items: center;
     padding: 20px;
-    background-color: black;
+    background-color: white;
 }
 }
 nav {
@@ -184,11 +178,11 @@ nav {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     align-items: center;
     padding: 10px;
-    background-color: black;
+    background-color:white;
     margin-right: 20px;
 }
 nav a {
-    color: white;
+    color: black;
     text-decoration: none; /* Remove default underline for links */
 }
 nav ul {
@@ -202,7 +196,7 @@ nav li {
     margin-left: 40px; /* Adjust the left margin for spacing between items */
     font-size: 20px;
     margin-top: 15px;
-    color: white;
+    color: black;
     position: relative;
     padding-bottom: 10px;
 }
@@ -213,7 +207,7 @@ nav li {
     margin-left: 20px; /* Adjust the left margin for spacing between items */
     font-size: 14px;
     margin-top: 15px;
-    color: white;
+    color: black;
     position: relative;
     padding-bottom: 10px;
 }
@@ -226,7 +220,7 @@ nav li::after {
     left: 0;
     width: 0; /* Start with no width */
     height: 2px;
-    background-color: white;
+    background-color: black;
     transition: width 0.3s, border-bottom-color 0.3s;
 }
 
@@ -239,68 +233,68 @@ nav li:hover::after {
 nav li.current-page::after {
     width: 100%;
     height: 1px;
-    border-bottom: 1px solid white; 
+    border-bottom: 1px solid black; 
 }
-@media only screen and (min-width: 768px) {
-    .intro {
-        
-            width: 100%;
-            height: 800px;
-            overflow: hidden;
-            position: relative;
-            top: 0;
-            background: 
-                linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(255, 255, 255, 0.2)), 
-                url("../img/backgroundselfie.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
 
-}
-}
-@media only screen and (max-width: 767px){
-    .intro {
-        position: relative;
-        top: 0;
-        background: 
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(255, 255, 255, 0.2)), 
-            url("../img/testerbimage.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-}
-}
-@media only screen and (min-width: 768px) {
-.portfoliointro {
-   padding-top: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    
-    height: 420px;
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align items to the bottom */
+    width: 100%;
+    height: 800px;
     overflow: hidden;
-    background: linear-gradient(to bottom, #000000, black);
-    text-align: left;
-    color: white;
-    padding: 20px;
-}
-}
-@media only screen and (max-width: 768px) {
-.portfoliointro {
-    padding-top: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
     top: 0;
-    height: 150px;
-    overflow: hidden;
-    background: linear-gradient(to bottom, black, black
-    );
-    text-align: left;
-    color: white;
+    background: 
+        
+        url("../img/bgcolorful-01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.intro .content {
+    margin-top: auto; /* Push content to the bottom */
+    text-align: left; /* Center the text horizontally */
     padding: 20px;
+    color: white; /* Ensure text is visible against the background */
+    padding-bottom: 100px;
+    font-size: 16px;
 }
+
+.intro img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
 }
+
+
+.intro .slide-in{
+   margin-left: 5%;
+   margin-top: auto;
+}
+    .portfoliointro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* Aligns the text at the bottom */
+        padding-top: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        background: url("../img/beach-01.jpg") no-repeat center center / cover;
+        height: 450px;
+        overflow: hidden;
+        text-align: left;
+        color: black;
+        padding: 20px;
+        font-size: 25px;
+    }
+
+
 .portfoliointro  .h2{ 
         margin-top: 300px;
+        color: black;
     }
 
 .main-grid {
@@ -384,7 +378,7 @@ nav li.current-page::after {
 .passion-box {
     display: grid;
     grid-template-rows: 1fr;
-    box-shadow: 0px 4px 8px #d7d0d0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 20px;
     border-radius: 12px;
     background-color: white;
@@ -574,7 +568,7 @@ h3 {
     grid-template-columns: 1fr 1fr;
     margin-top: 50px;
 }
-@media only screen and (min-width: 768px) {
+
 .aboutintro {
     display: grid;
     gap: 20px;
@@ -586,33 +580,15 @@ h3 {
     top: 0;
     height: auto;
     overflow: hidden;
-    background: linear-gradient(to bottom, black, black);
+    background: #ffccff;
     box-sizing: border-box;
     padding: 20px;
     z-index: 2; /* Ensure the .aboutintro is above other elements */
     margin: auto;
+
 }
-}
-@media only screen and (max-width: 768px) {
-.aboutintro {
-    display: grid;
-    gap: 20px;
-     grid-template-columns: 1fr;
-  
-    grid-template-rows: auto auto auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    top: 0;
-    height: auto;
-    overflow: hidden;
-    background: linear-gradient(to bottom, black, black);
-    box-sizing: border-box;
-    padding: 20px;
-    z-index: 2; /* Ensure the .aboutintro is above other elements */
-   
-}
-}
+
+
   
 @media only screen and (min-width: 768px) {
   .aboutintro h1 {
@@ -633,8 +609,9 @@ h3 {
 .aboutintro p {
     grid-column: 1;
     grid-row: 3;
-    color: white;
+    color:black;
     margin-left: 5%;
+    font-size: 17px;
 }
 
   .aboutintro img {
@@ -648,6 +625,10 @@ h3 {
     object-fit: contain;
     margin-right: 5%;
     align-self: center;
+    
+}
+.handwiting{
+    margin-top: 150px;
 }
 }
 .aboutintro h1 {
@@ -655,6 +636,7 @@ h3 {
     grid-row: 1;
     font-size: 40px;
     align-self: center;
+    color: black;
    
   }
   
@@ -668,22 +650,22 @@ h3 {
 .aboutintro p {
     grid-column: 1;
     grid-row: 3;
-    color: white;
+    color: black;
     margin-left: 5%;
 }
-@media only screen and (max-width: 768px) {
-.aboutintro img {
+
+/* .aboutintro img {
     grid-column: 1;
     max-width: 300px;
     height: auto;
     border-radius: 10%;
     z-index: 1; /* Ensure the image is below .aboutpassions-grid */
-    padding: 20px;
+    /* padding: 20px;
     object-fit: contain;
     margin-right: 5%;
     align-self: center;
-}
-}
+} */ 
+
 @media only screen and (min-width: 768px) {
   .aboutpassions-grid {
     display: grid;
@@ -712,11 +694,13 @@ h3 {
 }
 .resume{
     text-align: center;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 150px;
+    
 }
 .main-grid-about .resume{
     align-items: center;
@@ -726,6 +710,7 @@ embed {
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+    
 }
 @media only screen and (max-width: 767px) {
     p {
@@ -758,3 +743,6 @@ margin-top: 50px;
 .highlights-grid.image-container:hover {
     transform: scale(1.1);
 }
+
+
+
