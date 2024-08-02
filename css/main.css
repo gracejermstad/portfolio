@@ -247,7 +247,7 @@ nav li.current-page::after {
     top: 0;
     background: 
         
-        url("../img/bgcolorful-01.jpg");
+        url("../img/bgplain-01.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     
