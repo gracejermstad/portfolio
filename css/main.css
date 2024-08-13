@@ -743,6 +743,11 @@ margin-top: 50px;
 .highlights-grid.image-container:hover {
     transform: scale(1.1);
 }
+.passion-box img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Ensures images scale within the grid */
+}
 
 
 
